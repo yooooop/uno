@@ -12,7 +12,8 @@ public class unoback extends Applet {
 	Image winuser, winaione, winaitwo, winaithree;
 	Image curblue, curred, curyellow, curgreen;
 	Image start; //sets the image variables
-	AudioClip bgm, play, take, win, aiturn; //sets the audio variables
+	AudioClip bgm; //DELETE THIS LINE TO PLAY WITHOUT BGM
+	AudioClip play, take, win, aiturn; //sets the audio variables
 	int number = rn.nextInt(112); //picks a random number between 0 and 111 which corresponds to the number of cards in the deck
 	//zero row for colour(numbered),first row for the number on the cards,second to check if it's taken
 	//yellow colour 1; red colour 2; blue colour 3; green colour 4;
@@ -141,7 +142,7 @@ public class unoback extends Applet {
         for (int i = 56; i < unocards.length; i++ ) {
             unopic[i] = getImage(getCodeBase(), (i-56) + ".png");
         }
-		bgm = getAudioClip(getCodeBase(), "background.wav");
+		bgm = getAudioClip(getCodeBase(), "background.wav"); //DELETE THIS LINE TO PLAY WITHOUT BGM
 		play = getAudioClip(getCodeBase(), "play.wav");
 		take = getAudioClip(getCodeBase(), "take.wav");
 		win = getAudioClip(getCodeBase(), "winning.wav");
@@ -184,7 +185,7 @@ public class unoback extends Applet {
 		if(xx > 0 && xx < 900 && yy > 0 && yy < 900 && startboo == false && gameended == false && tutorial == true ) {
 			System.out.println("This console will prove that player1, player2, and player3 work");
 			System.out.println("10 is reverse, 11 is skip, 12 is plus2, 30 is wild, 60 is plus4");
-			bgm.play();
+			bgm.play(); //DELETE THIS LINE TO PLAY WITHOUT BGM
 			offG.drawImage(background,0, 0,this);
 			offG.drawImage(start, 350, 650, this);
 			offG.drawImage(background, 0, 0, this);
