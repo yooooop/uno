@@ -16,6 +16,6 @@ You can also use JCreator or other IDEs.
 
 DISCLAIMER:
 
-The original has a background music file that could not be uploaded due to its file size. So if you wish to run this file with background music, a background.wav is required to be in the same folder as the assets to run it. If you are ok without the music, simply delete the lines ___-___ of the unoback.java file.
+The original has a background music file that could not be uploaded due to its file size. So if you wish to run this file with background music, a background.wav is required to be in the same folder as the assets to run it. If you are ok without the music, simply delete the lines with the comment "//DELETE THIS LINE TO PLAY WITHOUT BGM" of the unoback.java file.
 
 
